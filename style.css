@@ -1,0 +1,40 @@
+/* Sora Font */
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+.sora-light {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #111111;
+}
+.sora-regular {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #111111;
+}
+.sora-medium {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #111111;
+}
+.sora-semibold {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #111111;
+}
+.sora-bold {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #111111;
+}
+
+/* Custom CSS */
