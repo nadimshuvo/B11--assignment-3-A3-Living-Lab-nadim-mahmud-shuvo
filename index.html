@@ -16,32 +16,71 @@
   </head>
 
   <body class="sora-regular">
-    <section class="hero">
+    <!-- Gradient Background -->
+    <section class="bg-gradient-to-b from-white to-[#EFEBE3]">
       <!-- Header -->
       <header
-        class="container max-sm:px-4 max-sm:border-[0.5px] max-sm:border-[#179800] 2xl:max-w-[1320px] mx-auto min-h-[109px] flex justify-between items-center"
+        class="container max-sm:px-4 max-sm:border-[0.5px] max-sm:border-[#179800] 2xl:max-w-[1320px] mx-auto min-h-[109px] flex justify-between items-center lg:sticky lg:top-0 lg:z-50 bg-white"
       >
-        <!-- left logo -->
-        <div class="badge">
-          <img src="assets/logo-header.png" alt="logo" />
+        <!-- Mobile Logo -->
+        <div class="max-sm:block hidden">
+          <svg
+            width="50"
+            height="44"
+            viewBox="0 0 50 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="animate-[float_3.5s_ease-in-out_infinite]"
+          >
+            <path
+              d="M45.9 14.3C45.7 13.9 45.2 13.8 44.8 14C42.6 15.5 37.1 17.2 37.1 17.2C17.5 22.2 25.8 43.5 25.8 43.5C35.3 44.3 44.3 42.3 48 32.2C50.8 24.2 47.2 16.6 45.9 14.3Z"
+              fill="#638B3F"
+            />
+            <path
+              d="M25.7001 43.5C25.7001 42.5 29.2001 29.2 41.3001 22.8C41.3001 22.8 30.1001 32.8 25.7001 43.5Z"
+              fill="#82AF58"
+            />
+            <path
+              d="M8.99999 0.699994C9.39999 0.299994 9.99999 0.299994 10.4 0.699994C12.8 3.19999 19.2 7.09999 19.2 7.09999C42.4 19.2 25.7 43.6 25.7 43.6C13.4 41.9 2.69999 36.7 1.09999 22.8C-0.100015 11.8 6.59999 3.29999 8.99999 0.699994Z"
+              fill="#88C057"
+            />
+            <path
+              d="M25.8 43.5C26.1 42.2 25.6 24.4 12.3 12.8C12.2 12.7 23.4 28.7 25.8 43.5Z"
+              fill="#638B3F"
+            />
+          </svg>
+        </div>
+        <!-- Desktop Logo -->
+        <div class="max-sm:hidden block">
+          <img
+            src="assets/logo-header.png"
+            alt="logo"
+            class="animate-[float2_3.5s_ease-in-out_infinite]"
+          />
         </div>
         <!-- middle nav links -->
         <nav class="hidden lg:block lg:ml-auto lg:mr-[111px]">
           <ul class="flex gap-8">
-            <li class="text-xl">
+            <li
+              class="text-xl hover:text-[#179800] transition-all duration-300"
+            >
               <a href="#">Product</a>
             </li>
-            <li class="text-xl">
+            <li
+              class="text-xl hover:text-[#179800] transition-all duration-300"
+            >
               <a href="#">Services</a>
             </li>
-            <li class="text-xl">
+            <li
+              class="text-xl hover:text-[#179800] transition-all duration-300"
+            >
               <a href="#">Contact us</a>
             </li>
           </ul>
         </nav>
         <!-- right buttons and carts -->
         <div class="badge hidden sm:flex items-center gap-6">
-          <div class="icons flex gap-6">
+          <div class="icons flex gap-6 cursor-pointer">
             <!-- search icon -->
             <svg
               width="25"
@@ -77,11 +116,13 @@
           </div>
           <div class="buttons flex gap-3">
             <button
-              class="px-8 py-2.5 rounded-lg text-[#111111] border border-[#179800]"
+              class="px-8 py-2.5 rounded-lg text-[#111111] border border-[#179800] hover:bg-[#179800] hover:text-white transition-all duration-300"
             >
               Login
             </button>
-            <button class="px-8 py-2.5 rounded-lg bg-[#179800] text-white">
+            <button
+              class="px-8 py-2.5 rounded-lg bg-[#179800] text-white hover:bg-transparent border border-[#179800] hover:text-[#179800] hover:border hover:border-[#179800] transition-all duration-300"
+            >
               Register
             </button>
           </div>
@@ -104,7 +145,102 @@
           </svg>
         </div>
       </header>
-      <!-- Header -->
+      <!--// Header -->
+
+      <!-- Hero Section -->
+      <div class="hero max-sm:pt-12 pt-24 overflow-hidden">
+        <div
+          class="flex flex-col justify-center items-center text-center max-sm:gap-6 gap-9"
+        >
+          <h1
+            class="sora-semibold max-sm:text-3xl max-sm:leading-10 max-sm:max-w-[340px] text-6xl leading-[71px] animate-[hero-text-animation_1.5s_ease-out_infinite]"
+          >
+            Freshness
+            <span class="text-[#179800]">You Can <br />Count</span>
+            On, Prices You’ll Love!
+          </h1>
+          <p
+            class="sora-light max-sm:text-base max-sm:max-w-[350px] max-sm:mx-1 sm:font-normal text-xl max-w-[800px]"
+          >
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+          <img
+            src="assets/hero-vegetables.png"
+            alt="hero-image"
+            class="animate-[float-hero-img_3.5s_ease-in-out_infinite]"
+          />
+        </div>
+      </div>
     </section>
+
+    <main class="container max-sm:px-4 2xl:max-w-[1320px] mx-auto bg-white">
+      <!-- Services Section -->
+      <section class="sora-semibold max-sm:py-12 py-[140px]">
+        <h3 class="max-sm:mb-8 mb-12 max-sm:text-2xl text-4xl text-[#179800]">
+          Services
+        </h3>
+        <div class="cards flex flex-col md:flex-row gap-6">
+          <!-- card 1 -->
+          <div
+            class="card flex flex-1 flex-col justify-center items-center gap-3 bg-[#EFEBE3] hover:bg-[#179800]/80 transition-all duration-300 max-sm:pt-[26px] max-sm:px-[26px] max-sm:pb-[37px] pt-8 px-8 pb-11 rounded-2xl"
+          >
+            <div
+              class="flex justify-center items-center max-sm:w-[126px] max-sm:h-[126px] w-[150px] h-[150px] rounded-full bg-white"
+            >
+              <img
+                class="max-sm:w-[84px] max-sm:h-[84px]"
+                src="assets/service.png"
+                alt=""
+              />
+            </div>
+            <h4 class="max-sm:text-xl text-2xl">24/7 Services</h4>
+            <p class="sora-light text-center max-sm:text-base text-xl">
+              Always here when you need us. Shop anytime, day or night, with our
+              service and support.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="card flex flex-1 flex-col justify-center items-center gap-3 bg-[#EFEBE3] hover:bg-[#179800]/80 transition-all duration-300 max-sm:pt-[26px] max-sm:px-[26px] max-sm:pb-[37px] pt-8 px-8 pb-11 rounded-2xl"
+          >
+            <div
+              class="flex justify-center items-center max-sm:w-[126px] max-sm:h-[126px] w-[150px] h-[150px] rounded-full bg-white"
+            >
+              <img
+                class="max-sm:w-[84px] max-sm:h-[84px]"
+                src="assets/delivery.png"
+                alt=""
+              />
+            </div>
+            <h4 class="max-sm:text-xl text-2xl">Fast Delivery</h4>
+            <p class="sora-light text-center max-sm:text-base text-xl">
+              From our doorstep to yours in time. Enjoy same-day delivery to
+              keep your kitchen stocked with essentials.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="card flex flex-1 flex-col justify-center items-center gap-3 bg-[#EFEBE3] hover:bg-[#179800]/80 transition-all duration-300 max-sm:pt-[26px] max-sm:px-[26px] max-sm:pb-[37px] pt-8 px-8 pb-11 rounded-2xl"
+          >
+            <div
+              class="flex justify-center items-center max-sm:w-[126px] max-sm:h-[126px] w-[150px] h-[150px] rounded-full bg-white"
+            >
+              <img
+                class="max-sm:w-[84px] max-sm:h-[84px]"
+                src="assets/healthy.png"
+                alt=""
+              />
+            </div>
+            <h4 class="max-sm:text-xl text-2xl">Healthy Products</h4>
+            <p class="sora-light text-center max-sm:text-base text-xl">
+              Quality you can trust. We carefully select fresh, nutritious
+              products that meet the highest standards for your family's health.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--// Services -->
+    </main>
   </body>
 </html>
