@@ -9,13 +9,18 @@
       type="image/x-icon"
     />
     <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>nature's platter</title>
   </head>
 
-  <body class="sora-regular">
+  <body class="sora-regular bg-white">
     <!-- Gradient Background -->
     <section class="bg-gradient-to-b from-white to-[#EFEBE3]">
       <!-- Header -->
@@ -79,7 +84,7 @@
           </ul>
         </nav>
         <!-- right buttons and carts -->
-        <div class="badge hidden sm:flex items-center gap-6">
+        <div class="hidden sm:flex items-center gap-6">
           <div class="icons flex gap-6 cursor-pointer">
             <!-- search icon -->
             <svg
@@ -670,63 +675,277 @@
       </section>
       <!--// Products -->
 
+      <!-- Custom Section -->
+      <!-- Testimonial Carousel -->
+      <section class="container max-sm:px-4 2xl:max-w-[1320px] mx-auto">
+        <h3
+          class="sora-semibold max-sm:mb-8 max-sm:mt-12 mt-24 mb-12 max-sm:text-2xl text-4xl text-[#179800]"
+        >
+          The Proof Hub
+        </h3>
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="https://images.unsplash.com/photo-1518843875459-f738682238a6?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❮</a
+              >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="w-full"
+            />
+            <div
+              class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#179800] text-white border-[#179800]"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--// Testimonial Carousel -->
+
       <!-- Arrival & Offers -->
       <section class="sora-semibold max-sm:py-12 py-[140px]">
         <div class="container max-sm:px-4 2xl:max-w-[1320px] mx-auto">
           <h3 class="max-sm:mb-8 mb-12 max-sm:text-2xl text-4xl text-[#179800]">
             Arrival & Offers
           </h3>
-        
-        <!-- Cards container -->
-        <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-5">
-          <!-- left card (Dawat) -->
-          <div
 
-            class="flex justify-between items-center bg-[#115414] max-w-[358px] max-h-[190px] rounded-xl pt-[18px] pl-[18px] w-full lg:max-w-[780px] lg:max-h-[344px] lg:rounded-3xl lg:pt-[33px] lg:pl-[40px] lg:w-[59%]"
-          >
-
-            <!-- Dawat Text (left side) -->
-            <div>
-              <img
-                src="assets/dawat-logo.png"
-                alt="dawat"
-                class="max-w-[113px] max-h-[42px] mt-2 lg:mt-[15px] lg:max-w-[246px] lg:max-h-[76px]"
-              />
-              <p class="poppins-regular text-[13px] leading-5 text-white bg-[#63B76D] rounded-lg px-[18px] py-2 inline-block mt-[17px] mb-[15px] lg:text-[23px] lg:leading-9 lg:rounded-[14px] lg:px-[40px] lg:py-[15px] lg:mt-[31px] lg:mb-[27px]">Cook Exotic Dishes</p>
-              <h3 class="poppins-regular text-[22px] leading-[28px] text-white pb-[25px] lg:text-[40px] lg:leading-[50px] lg:pb-[46px]">UP to <span class="poppins-bold">20% OFF</span></h3>
-            </div>
-            <!--// Dawat Text (left side) -->
-            <!-- Dawat Image(right side) -->
-            <div>
-              <img
-                src="assets/dawat-mock-up.png"
-                alt="dawat"
-                class="max-w-[147px] max-h-[172px] lg:max-w-[353px] lg:max-h-[310px]"
-              />
-            </div>
-            <!--// Dawat Image (right side) -->
-          </div>
+          <!-- Cards container -->
+          <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-5">
             <!-- left card (Dawat) -->
-          
-          <!-- right card (India Gate) -->
-          <div class="flex justify-between items-center bg-[#102861] max-w-[358px] max-h-[190px] rounded-xl pt-[11px] pl-[18px] pb-1 w-full lg:max-w-[520px] lg:max-h-[344px] lg:rounded-3xl lg:pt-[20px] lg:pl-[27px] lg:pb-2 lg:w-[41%]">
-
-            <div>
-              <img src="assets/india-gate-logo.png" alt="india gate" class="max-w-[64px] max-h-[71px] xl:max-w-[100px] lg:max-h-[128px]">
-              <p class="poppins-regular text-[13px] leading-5 text-white bg-[#2A4D97] rounded-lg px-[18px] py-2 inline-block mt-[13px] mb-[15px] lg:text-[23px] lg:leading-9 lg:rounded-[14px] lg:px-[27px] lg:py-[15px] lg:mt-[17px] lg:mb-[26px]">Cook Exotic Dishes</p>
-              <h3 class="poppins-regular text-[22px] leading-[28px] text-white pb-[25px] lg:text-[40px] lg:leading-[50px] lg:pb-[38px]">UP to <span class="poppins-bold">20% OFF</span></h3>
+            <div
+              class="flex justify-between items-center bg-[#115414] max-w-[358px] max-h-[190px] rounded-xl pt-[18px] pl-[18px] w-full lg:max-w-[780px] lg:max-h-[344px] lg:rounded-3xl lg:pt-[33px] lg:pl-[40px] lg:w-[59%]"
+            >
+              <!-- Dawat Text (left side) -->
+              <div>
+                <img
+                  src="assets/dawat-logo.png"
+                  alt="dawat"
+                  class="max-w-[113px] max-h-[42px] mt-2 lg:mt-[15px] lg:max-w-[246px] lg:max-h-[76px]"
+                />
+                <p
+                  class="poppins-regular text-[13px] leading-5 text-white bg-[#63B76D] rounded-lg px-[18px] py-2 inline-block mt-[17px] mb-[15px] lg:text-[23px] lg:leading-9 lg:rounded-[14px] lg:px-[40px] lg:py-[15px] lg:mt-[31px] lg:mb-[27px]"
+                >
+                  Cook Exotic Dishes
+                </p>
+                <h3
+                  class="poppins-regular text-[22px] leading-[28px] text-white pb-[25px] lg:text-[40px] lg:leading-[50px] lg:pb-[46px]"
+                >
+                  UP to <span class="poppins-bold">20% OFF</span>
+                </h3>
+              </div>
+              <!--// Dawat Text (left side) -->
+              <!-- Dawat Image(right side) -->
+              <div>
+                <img
+                  src="assets/dawat-mock-up.png"
+                  alt="dawat"
+                  class="max-w-[147px] max-h-[172px] lg:max-w-[353px] lg:max-h-[310px]"
+                />
+              </div>
+              <!--// Dawat Image (right side) -->
             </div>
+            <!-- left card (Dawat) -->
 
-            <div>
-              <img src="assets/india-gate-mock-up.png" alt="india gate" class="max-w-[121px] max-h-[159px] pr-[10px] lg:max-w-[175px] lg:max-h-[287.5px] lg:pr-[15px]">
-            </div> 
+            <!-- right card (India Gate) -->
+            <div
+              class="flex justify-between items-center bg-[#102861] max-w-[358px] max-h-[190px] rounded-xl pt-[11px] pl-[18px] pb-1 w-full lg:max-w-[520px] lg:max-h-[344px] lg:rounded-3xl lg:pt-[20px] lg:pl-[27px] lg:pb-2 lg:w-[41%]"
+            >
+              <div>
+                <img
+                  src="assets/india-gate-logo.png"
+                  alt="india gate"
+                  class="max-w-[64px] max-h-[71px] xl:max-w-[100px] lg:max-h-[128px]"
+                />
+                <p
+                  class="poppins-regular text-[13px] leading-5 text-white bg-[#2A4D97] rounded-lg px-[18px] py-2 inline-block mt-[13px] mb-[15px] lg:text-[23px] lg:leading-9 lg:rounded-[14px] lg:px-[27px] lg:py-[15px] lg:mt-[17px] lg:mb-[26px]"
+                >
+                  Cook Exotic Dishes
+                </p>
+                <h3
+                  class="poppins-regular text-[22px] leading-[28px] text-white pb-[25px] lg:text-[40px] lg:leading-[50px] lg:pb-[38px]"
+                >
+                  UP to <span class="poppins-bold">20% OFF</span>
+                </h3>
+              </div>
+
+              <div>
+                <img
+                  src="assets/india-gate-mock-up.png"
+                  alt="india gate"
+                  class="max-w-[121px] max-h-[159px] pr-[10px] lg:max-w-[175px] lg:max-h-[287.5px] lg:pr-[15px]"
+                />
+              </div>
+            </div>
+            <!--// right card (India Gate) -->
           </div>
-          <!--// right card (India Gate) -->
-          </div>
-        </div>
         </div>
       </section>
       <!--// Arrival & Offers -->
+
+      <!-- Subscribe -->
+      <section
+        class="container max-sm:px-4 2xl:max-w-[1320px] mx-auto relative z-10 mb-[-234px] lg:mb-[-227px]"
+      >
+        <div
+          class="bg-[#EFEBE3] rounded-2xl pt-8 pb-10 flex flex-col lg:justify-between lg:flex-row lg:rounded-3xl lg:px-[102px] lg:py-[55px]"
+        >
+          <div>
+            <img
+              src="assets/vegetable-busket.png"
+              alt="vegetable busket"
+              class="max-w-[232px] max-h-[182px] lg:max-w-[442px] lg:max-h-[348px] mx-auto"
+            />
+          </div>
+          <div
+            class="text-center flex flex-col max-sm:gap-[13px] mt-6 lg:text-left lg:mt-[42px]"
+          >
+            <h3
+              class="sora-bold text-[22px] leading-[28px] text-[#179800] lg:sora-semibold lg:text-[36px] lg:leading-[45px] lg:text-[#111111]"
+            >
+              Get Grocery News!
+            </h3>
+            <p
+              class="text-base max-w-[333px] max-sm:mx-auto lg:max-w-[536px] lg:text-[20px] lg:leading-[25px] lg:mt-[22px] lg:mb-[38px]"
+            >
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter email...."
+              class="bg-white text-[#179800] placeholder:text-[#C4C4C4] text-sm leading-8 p-2 rounded-md flex-1 mt-2 mx-5 focus:outline-none focus:ring-2 focus:ring-[#179800] lg:max-w-[472px] lg:max-h-[67px] lg:text-base lg:p-[18px] lg:mt-0 lg:mb-[38px] lg:block lg:mx-0"
+            />
+
+            <button
+              class="bg-[#179800] text-white text-sm px-6 py-2 rounded-md inline-block max-w-[121px] max-sm:mx-auto lg:text-xl lg:px-[30px] lg:py-[10px] lg:max-w-[164px] lg:rounded-lg lg:border-2 lg:border-[#179800] hover:bg-white hover:text-[#179800] transition-all duration-300"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--// Subscribe -->
     </main>
+    <!-- Footer  -->
+    <footer
+      class="bg-[#179800] pt-[281px] pb-[50px] lg:pt-[370px] lg:pb-[141px]"
+    >
+      <div
+        class="container max-sm:px-4 2xl:max-w-[1320px] mx-auto lg:flex lg:justify-between lg:items-end lg:gap-10"
+      >
+        <div>
+          <img
+            src="assets/logo-footer.png"
+            alt="footer logo"
+            class="max-w-[100px] max-h-[39px] lg:max-w-[154px] lg:max-h-[60.5px]"
+          />
+          <h3
+            class="text-base leading-5 text-white/70 mt-[14px] lg:text-xl lg:mt-[11.5px] lg:max-w-[426px]"
+          >
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </h3>
+        </div>
+        <div
+          class="flex flex-col gap-5 mt-[35px] mb-10 lg:mt-0 lg:mb-0 lg:gap-8 lg:mr-auto xl:ml-[150px]"
+        >
+          <a
+            href="#"
+            class="text-white text-base leading-5 lg:text-xl lg:leading-7 hover:text-[#2A4D97] transition-all duration-300"
+            >Product</a
+          >
+          <a
+            href="#"
+            class="text-white text-base leading-5 lg:text-xl lg:leading-7 hover:text-[#2A4D97] transition-all duration-300"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-white text-base leading-5 lg:text-xl lg:leading-7 hover:text-[#2A4D97] transition-all duration-300"
+            >Contact us</a
+          >
+        </div>
+        <div>
+          <h4 class="text-white text-[14px] lg:text-xl">Follow Us</h4>
+          <div class="mt-3 flex items-center gap-[30px]">
+            <a href="#"><img src="assets/facebook.png" alt="facebook" /></a>
+            <a href="#"><img src="assets/instagram.png" alt="instagram" /></a>
+            <a href="#"><img src="assets/linkedin.png" alt="linkedin" /></a>
+            <a href="#"><img src="assets/youtube.png" alt="youtube" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--// Footer -->
   </body>
 </html>
